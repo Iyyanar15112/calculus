@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1><b>CALCULATOR</b></h1>
+    <input type="text" id="res" readonly><br><br>
+    <table>
+        <tr>
+            <td><button onclick="append(7, this)">7</button></td>
+<td><button onclick="append(8, this)">8</button></td>
+<td><button onclick="append(9, this)">9</button></td>
+<td><button onclick="operate('+', this)">+</button></td>
+
+
+        </tr>
+        <tr>
+            <td><button onclick="append(4,this)">4</button></td>
+            <td><button onclick="append(5,this)">5</button></td>
+            <td><button onclick="append(6,this)">6</button></td>
+            <td><button onclick="operate('-',this)">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(1,this)">1</button></td>
+            <td><button onclick="append(2,this)">2</button></td>
+            <td><button onclick="append(3,this)">3</button></td>
+            <td><button onclick="operate('*',this)">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="append(0,this)">0</button></td>
+            <td><button onclick="clearresult(this)">C</button></td>
+            <td><button onclick="calculate(this)">=</button></td>
+            <td><button onclick="operate('/',this)">/</button></td>
+        </tr>
+        
+    </table>
+    <script src="index.js"></script>
+</body>
+</html>
